@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+   <main class="row container-fluid">
+    <div class="col-lg-6 col-12 mx-auto">
+        <section class="container my-5">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#card1">BOM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#card2">Window</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#card3">Document</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#card4">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#card5">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#card6">Navigation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#card7">Screen</a>
+                </li>
+            </ul>
+        
+        
+        <div class="tab-content">
+            <div id="card1" class="tab-pane fade show active">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Que es Browser Object Model?</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Browser Object MOdel o BOM es una interfaz de programacion que proporciona a los desarrolladores web acceso y control sobre el navegador web.
+                            Consta de un conjunto de objetos que representan diferentes componentes del navegador, como la ventana del anvegador, la barra de anvegacion, los frames/framesets, los historiales de navegacion, los objetos de cookies, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="card2" class="tab-pane fade">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Objeto window</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">El objeto "window" proporciona muchos otros métodos y propiedades útiles, como manipulación del historial de navegación (window.history), manejo de eventos (window.addEventListener), acceso al documento actual (window.document), manipulación de cookies (window.document.cookie), entre otros.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p>let currentURL = window.location.href;<br>
+                            console.log(currentURL); <span class="fw-semibold">// Imprime la URL actual en la consola del navegador</span></p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="col-12">window.open('https://www.ejemplo.com', '_blank'); <br>
+                            <span class="fw-semibold">Este código abrirá una nueva ventana o pestaña en el navegador con la URL especificada ('https://www.ejemplo.com').</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="card3" class="tab-pane fade">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">document.</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">JavaScript te permite manipular y crear documentos HTML dinámicamente. Puedes utilizar JavaScript para seleccionar elementos existentes en el documento y modificar su contenido, estilo, atributos, entre otros. Además, también puedes crear nuevos elementos y agregarlos al documento.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="col-12">let parrafo = document.getElementById("miParrafo");
+                            parrafo.innerHTML = "Este es un nuevo contenido para el párrafo."; <span class="fw-semibold">//Crea un nuevo parrafo desde js</span></p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="col-12">let nuevoTitulo = document.createElement("h1");
+                            nuevoTitulo.innerHTML = "Este es un nuevo título";
+                            
+                            document.body.appendChild(nuevoTitulo) <span class="fw-semibold">//Al ejecutar este código, se creará un nuevo título h1 con el contenido "Este es un nuevo título" y se agregará al final del cuerpo del documento.</span>;</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card4" class="tab-pane fade">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">history</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">La API de Historial de JavaScript (History API) te permite manipular el historial del navegador, permitiéndote agregar y eliminar entradas, así como navegar hacia atrás y hacia adelante en el historial del navegador. Además, también puedes utilizar esta API para cambiar la URL en la barra de direcciones del navegador sin tener que cargar una página nueva.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="col-12"><span class="fw-semibold">history.length:</span> devuelve el número de entradas en el historial del navegador.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="col-12"><span class="fw-semibold">history.back():</span>navega a la página anterior en el historial del navegador.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="col-12"><span class="fw-semibold">history.forward():</span>navega a la siguiente página en el historial del navegador.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="col-12"><span class="fw-semibold">history.go(n):</span>navega a una entrada específica en el historial del navegador, donde n es el número de entradas que deseas saltar hacia adelante o hacia atrás (por ejemplo, history.go(-2) navegará dos entradas hacia atrás en el historial).</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card5" class="tab-pane fade">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Location</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">El objeto location proporciona información sobre la URL actual del documento y te permite interactuar con ella. Puedes acceder a diferentes propiedades de location para obtener información sobre la URL, como el host, el protocolo, el path, los parámetros de búsqueda y más. Además, también puedes utilizar algunas funciones de location para redirigir o cargar nuevas URL.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">location.href:</span> devuelve la URL completa de la página actual</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">location.host:</span> devuelve el nombre de dominio y el número de puerto de la página actual.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">location.protocol:</span> devuelve el protocolo de la URL actual (por ejemplo, "http:" o "https:").</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">location.pathname:</span>devuelve la parte del path de la URL después del nombre de dominio.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">location.search:</span>devuelve los parámetros de búsqueda de la URL actual, incluyendo el signo de interrogación.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card6" class="tab-pane fade">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Navigation</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">El objeto navigation proporciona información y control sobre la navegación del usuario en la página web actual. Te permite acceder a diferentes propiedades y métodos para obtener información sobre la sesión de navegación del usuario, recargar la página, redirigir a otra página, entre otras acciones.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">navigation.userAgent:</span>devuelve una cadena que representa el agente de usuario del navegador.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">navigation.appVersion:</span>devuelve una cadena que representa la versión del navegador.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">navigation.language: </span>devuelve el idioma preferido del usuario.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">navigation.onLine:</span>indica si el navegador del usuario está en línea (conexión a Internet activa).</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card7" class="tab-pane fade">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">screen</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">El objeto screen proporciona información sobre las características de la pantalla del usuario, como la resolución, el color, la profundidad y el tamaño. Puedes acceder a diferentes propiedades de screen para obtener información sobre la pantalla del dispositivo del usuario y adaptar tu aplicación en consecuencia.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">screen.width:</span>devuelve el ancho en píxeles de la pantalla del dispositivo.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">screen.height:</span>devuelve la altura en píxeles de la pantalla del dispositivo.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">screen.availWidth:</span>devuelve el ancho en píxeles de la pantalla disponible para aplicaciones, teniendo en cuenta elementos como la barra de tareas o el dock.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">screen.availHeight:</span>devuelve la altura en píxeles de la pantalla disponible para aplicaciones, teniendo en cuenta elementos como la barra de tareas o el dock.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">screen.colorDepth:</span>devuelve la profundidad de color de la pantalla en bits por píxel.</p>
+                    </div>
+                    <div class="card rounded-0 px-3">
+                        <p class="card-text"><span class="fw-semibold">screen.pixelDepth:</span>devuelve la profundidad de píxel de la pantalla en bits por píxel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+   </main>
+    
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
